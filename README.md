@@ -65,13 +65,3 @@ Backend runs on `http://localhost:5000`, frontend on `http://localhost:5173`.
 | `DELETE` | `/api/edges/:id`            | Remove a connection       |
 | `POST`   | `/api/graph/reset`          | Reset to default graph    |
 | `POST`   | `/api/graph/import`         | Import a full graph       |
-
-## Notes
-
-- Metrics are simulated — there's no actual infrastructure being monitored. The simulation uses sine waves + noise to make the numbers feel dynamic.
-- State is in-memory, so restarting the backend resets everything to the default architecture.
-- The default graph models a typical e-commerce backend: client → gateway → services → databases/queues → notification/analytics.
-
-## License
-
-MIT
